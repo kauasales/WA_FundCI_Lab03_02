@@ -28,7 +28,7 @@ jobs:
         with:
           context: ./
           push: true
-          tags: kauasales/webacademy:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/webacademy:latest
 
   deploy:
     runs-on: ubuntu-latest
